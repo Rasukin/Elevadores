@@ -9,14 +9,6 @@ package Strategy;
  *
  * @author rlian
  */
-public class StrategyInterrupcion {
-    private StrategyInterrupciones strategy;
-    
-    public StrategyInterrupcion(StrategyInterrupciones funcion){
-        strategy = funcion;
-    }
-    
-    public String ejecutarStrategy(String interrupcion){
-        return strategy.Interrupcion(interrupcion);
-    }
+public interface StrategyInterrupcion {
+    public String Interrupcion(String caso);
 }

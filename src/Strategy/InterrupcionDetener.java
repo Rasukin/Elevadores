@@ -9,10 +9,10 @@ package Strategy;
  *
  * @author rlian
  */
-public class InterrupcionDetener implements StrategyInterrupciones {
+public class InterrupcionDetener implements StrategyInterrupcion {
 
     @Override
-    public String Interrupcion(String interrupcion) {
+    public String Interrupcion(String caso) {
         return "Interr.Detener";
     }
     

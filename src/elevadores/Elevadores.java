@@ -5,7 +5,9 @@
  */
 package elevadores;
 
-import Strategy.*;
+import Strategy.Contexto;
+import Strategy.InterrupcionDestino;
+import Strategy.StrategyInterrupcion;
 
 /**
  *
@@ -17,9 +19,9 @@ public class Elevadores {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       StrategyInterrupcion strategy = new StrategyInterrupcion(new InterrupcionDestino());
-       
-        System.out.println("Nombre de operacion: " + strategy.ejecutarStrategy("hola"));
+        Contexto contexto = new Contexto(new InterrupcionDestino());
+        
+        System.out.println(contexto.executeStrategy("hola"));
     }
     
 }

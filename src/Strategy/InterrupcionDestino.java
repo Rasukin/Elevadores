@@ -9,10 +9,10 @@ package Strategy;
  *
  * @author rlian
  */
-public class InterrupcionDestino implements StrategyInterrupciones{
+public class InterrupcionDestino implements StrategyInterrupcion{
 
     @Override
-    public String Interrupcion(String interrupcion) {
+    public String Interrupcion(String caso) {
         return "Interr.Destino";
     }
      
