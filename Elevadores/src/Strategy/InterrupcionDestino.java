@@ -12,8 +12,8 @@ package Strategy;
 public class InterrupcionDestino implements StrategyInterrupcion{
 
     @Override
-    public int Interrupcion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String Interrupcion(String caso) {
+        return "Interr.Destino";
     }
      
 }

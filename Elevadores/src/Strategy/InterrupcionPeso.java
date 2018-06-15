@@ -9,6 +9,11 @@ package Strategy;
  *
  * @author rlian
  */
-public class InterrupcionPeso {
+public class InterrupcionPeso implements StrategyInterrupcion{
+
+    @Override
+    public String Interrupcion(String caso) {
+        return "Iterr.Peso";
+    }
     
 }

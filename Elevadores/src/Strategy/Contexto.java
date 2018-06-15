@@ -12,11 +12,11 @@ package Strategy;
 public class Contexto {
     private StrategyInterrupcion strategy;
     
-    public Contexto(StrategyInterrupcion funcion){
-        strategy = funcion;
-    }
-    
-    public int ejecutarStrategy(){
-        return strategy.Interrupcion();
-    }
+    public Contexto(StrategyInterrupcion strategy){
+      this.strategy = strategy;
+   }
+
+   public String executeStrategy(String caso){
+      return strategy.Interrupcion(caso);
+   }
 }
