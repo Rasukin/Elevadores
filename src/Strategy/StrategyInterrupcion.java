@@ -10,5 +10,5 @@ package Strategy;
  * @author rlian
  */
 public interface StrategyInterrupcion {
-    public String Interrupcion(String caso);
+    public String Interrupcion();
 }

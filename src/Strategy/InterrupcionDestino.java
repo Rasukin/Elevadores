@@ -12,8 +12,8 @@ package Strategy;
 public class InterrupcionDestino implements StrategyInterrupcion{
 
     @Override
-    public String Interrupcion(String caso) {
-        return "Interr.Destino";
+    public String Interrupcion() {
+        return "3";
     }
      
 }

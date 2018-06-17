@@ -12,8 +12,8 @@ package Strategy;
 public class InterrupcionDetener implements StrategyInterrupcion {
 
     @Override
-    public String Interrupcion(String caso) {
-        return "Interr.Detener";
+    public String Interrupcion() {
+        return "2";
     }
     
 }

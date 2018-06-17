@@ -16,7 +16,7 @@ public class Contexto {
       this.strategy = strategy;
    }
 
-   public String executeStrategy(String caso){
-      return strategy.Interrupcion(caso);
+   public String executeStrategy(){
+      return strategy.Interrupcion();
    }
 }

@@ -7,7 +7,10 @@ package elevadores;
 
 import Strategy.Contexto;
 import Strategy.InterrupcionDestino;
+import Strategy.Interruptor;
 import Strategy.StrategyInterrupcion;
+import java.util.concurrent.ThreadLocalRandom;
+import logica.Despachador;
 
 /**
  *
@@ -19,9 +22,16 @@ public class Elevadores {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Contexto contexto = new Contexto(new InterrupcionDestino());
+        int randomNum; 
+        Despachador despachador = new Despachador();
+        Interruptor interruptor = new Interruptor();
         
-        System.out.println(contexto.executeStrategy("hola"));
+        for (int i = 0; i < 10; i++) {
+            randomNum = ThreadLocalRandom.current().nextInt(0, 4);
+            String interr = interruptor.interpretarInterrupcion(randomNum);
+            despachador.asignarInterrupcion(interr);
+        }
+        
     }
     
 }

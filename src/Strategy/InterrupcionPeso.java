@@ -12,7 +12,7 @@ package Strategy;
 public class InterrupcionPeso implements StrategyInterrupcion{
 
     @Override
-    public String Interrupcion(String caso) {
+    public String Interrupcion() {
         return "Iterr.Peso";
     }
     

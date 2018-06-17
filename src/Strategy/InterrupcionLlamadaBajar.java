@@ -9,11 +9,11 @@ package Strategy;
  *
  * @author rlian
  */
-public class InterrupcionLlamada implements StrategyInterrupcion{
+public class InterrupcionLlamadaBajar implements StrategyInterrupcion{
 
     @Override
-    public String Interrupcion(String caso) {
-        return "Interr.Llamada";
+    public String Interrupcion() {        
+        return "1";
     }
     
 }

@@ -3,13 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/TEC/Diseño%20de%20Software/Elevadores/src/Strategy/InterrupcionPeso.java</file>
-            <file>file:/C:/TEC/Diseño%20de%20Software/Elevadores/src/Strategy/StrategyInterrupcion.java</file>
-            <file>file:/C:/TEC/Diseño%20de%20Software/Elevadores/src/Strategy/StrategyInterrupciones.java</file>
-            <file>file:/C:/TEC/Diseño%20de%20Software/Elevadores/src/Strategy/InterrupcionDetener.java</file>
-            <file>file:/C:/TEC/Diseño%20de%20Software/Elevadores/src/Strategy/InterrupcionDestino.java</file>
-            <file>file:/C:/TEC/Diseño%20de%20Software/Elevadores/src/Strategy/InterrupcionLlamada.java</file>
-            <file>file:/C:/TEC/Diseño%20de%20Software/Elevadores/src/elevadores/Elevadores.java</file>
+            <file>file:/C:/GitHub/Elevadores/src/Strategy/Interruptor.java</file>
+            <file>file:/C:/GitHub/Elevadores/src/elevadores/Elevadores.java</file>
+            <file>file:/C:/GitHub/Elevadores/src/View/ViewElevadores.java</file>
+            <file>file:/C:/GitHub/Elevadores/src/Strategy/InterrupcionLlamada.java</file>
+            <file>file:/C:/GitHub/Elevadores/src/Strategy/Despachador.java</file>
         </group>
     </open-files>
 </project-private>
