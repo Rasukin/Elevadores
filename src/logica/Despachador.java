@@ -18,20 +18,22 @@ public class Despachador {
         interruptor = new Interruptor();
     }
     
-    public void asignarInterrupcion(String interr){
+    public String asignarInterrupcion(String interr){
+        String result = "";
         switch(interr){
-            case "0":
-                System.out.println("Ascensor subiendo");
+            case "0": result = "Ascensor subiendo";
+                //System.out.println("Ascensor subiendo");
                 break;
-            case "1":
-                System.out.println("Ascensor bajando");
+            case "1": result = "Asncensor Bajando";
+                //System.out.println("Ascensor bajando");
                 break;
-            case "2":
-                System.out.println("Ascensor deteniendo");
+            case "2": result = "Ascendor detendio";
+                //System.out.println("Ascensor deteniendo");
                 break;
-            case "3":
-                System.out.println("Ascensor pidio destino.");
+            case "3": result = "Ascensor pidio destino";
+                //System.out.println("Ascensor pidio destino.");
                 break;
         }
+        return result;
     }
 }

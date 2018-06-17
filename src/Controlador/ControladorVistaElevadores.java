@@ -13,6 +13,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
 import logica.Despachador;
@@ -50,9 +53,9 @@ public class ControladorVistaElevadores implements ActionListener{
             for (int i = 0; i < 10; i++) {
                 randomNum = ThreadLocalRandom.current().nextInt(0, 4);
                 String interr = interruptor.interpretarInterrupcion(randomNum);
-                despachador.asignarInterrupcion(interr);
+                vistaElevador.tbMensajes.append(despachador.asignarInterrupcion(interr) + "\n");
             }
-            
+
         }
     }
 }

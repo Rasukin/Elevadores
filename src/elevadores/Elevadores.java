@@ -5,6 +5,7 @@
  */
 package elevadores;
 
+import Controlador.ContoladorVistaPincipal;
 import Controlador.ControladorVistaElevadores;
 import Strategy.Contexto;
 import Strategy.InterrupcionDestino;
@@ -23,8 +24,11 @@ public class Elevadores {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Controlador.ControladorVistaElevadores controladorVistaPrincipal = new ControladorVistaElevadores();
-        controladorVistaPrincipal.initInterface();
+//        Controlador.ControladorVistaElevadores controladorVistaPrincipal = new ControladorVistaElevadores();
+//        controladorVistaPrincipal.initInterface();
+
+          Controlador.ContoladorVistaPincipal controVistaPincipal = new ContoladorVistaPincipal();
+          controVistaPincipal.initInterface();
             
     }
 }

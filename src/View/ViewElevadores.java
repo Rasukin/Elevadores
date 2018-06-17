@@ -47,7 +47,7 @@ public class ViewElevadores extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         p6Subir = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        tbMensajes = new javax.swing.JTextArea();
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
@@ -172,9 +172,9 @@ public class ViewElevadores extends javax.swing.JPanel {
 
         p6Subir.setText("Subir");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        tbMensajes.setColumns(20);
+        tbMensajes.setRows(5);
+        jScrollPane1.setViewportView(tbMensajes);
 
         jButton13.setText("1");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -1409,7 +1409,6 @@ public class ViewElevadores extends javax.swing.JPanel {
     public javax.swing.JLabel jLabel8;
     public javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
@@ -1437,5 +1436,6 @@ public class ViewElevadores extends javax.swing.JPanel {
     private javax.swing.JButton p5Subir;
     private javax.swing.JButton p6Bajar;
     private javax.swing.JButton p6Subir;
+    public javax.swing.JTextArea tbMensajes;
     // End of variables declaration//GEN-END:variables
 }
