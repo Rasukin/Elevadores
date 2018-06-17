@@ -5,6 +5,7 @@
  */
 package elevadores;
 
+import Controlador.ControladorVistaElevadores;
 import Strategy.Contexto;
 import Strategy.InterrupcionDestino;
 import Strategy.Interruptor;
@@ -22,16 +23,8 @@ public class Elevadores {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int randomNum; 
-        Despachador despachador = new Despachador();
-        Interruptor interruptor = new Interruptor();
-        
-        for (int i = 0; i < 10; i++) {
-            randomNum = ThreadLocalRandom.current().nextInt(0, 4);
-            String interr = interruptor.interpretarInterrupcion(randomNum);
-            despachador.asignarInterrupcion(interr);
-        }
-        
+        Controlador.ControladorVistaElevadores controladorVistaPrincipal = new ControladorVistaElevadores();
+        controladorVistaPrincipal.initInterface();
+            
     }
-    
 }
